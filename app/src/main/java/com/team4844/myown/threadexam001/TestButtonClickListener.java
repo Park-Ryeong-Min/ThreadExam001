@@ -40,6 +40,7 @@ public class TestButtonClickListener implements View.OnClickListener {
 
         Toast.makeText(context, this.thread.getOutputData(), Toast.LENGTH_LONG).show();
 
+        this.thread.setCount(0);
     }
 
     public CountToMainHandler getHandler(){

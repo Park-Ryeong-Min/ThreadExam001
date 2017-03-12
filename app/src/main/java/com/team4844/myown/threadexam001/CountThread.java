@@ -35,6 +35,11 @@ public class CountThread extends Thread {
         return this.output_data;
     }
 
+    public void setCount(int a){
+        // reset variable count at 'a'
+        this.count = a;
+    }
+
     @Override
     public void run() {
 
@@ -53,4 +58,5 @@ public class CountThread extends Thread {
         super.run();
 
     }
+
 }
